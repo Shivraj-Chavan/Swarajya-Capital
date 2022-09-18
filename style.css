@@ -195,3 +195,22 @@ nav .box {
 .fa:hover{
   color:rgb(93, 93, 223);
 }
+.card:hover{
+  transition: all .4s;
+  transform: scale(1.06);
+  box-shadow: 0px 0px 40px gray;
+}
+.card a:hover{
+background-color: white;
+color: rgb(100, 100, 231);
+}
+.featurette{
+  margin-top:50px;
+  padding-top:40px
+}
+.featurette div{
+  padding:30px
+}
+.featurette img{
+  height:500px;
+}
