@@ -266,3 +266,12 @@ html .mt10 {
   transform: translateY(10px);
   transition: 100ms;
  }
+ .body{
+  background: url(./images/bg6.jpg) no-repeat fixed;
+  background-size:100% 100%;
+  filter: blur(6px);
+  height:800px;
+  width:100%;
+  position:fixed;
+  z-index: -1;
+ }
