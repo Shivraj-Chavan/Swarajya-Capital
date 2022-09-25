@@ -1,24 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-*{
-
-  box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-
-/* main background image */
-.body {
-  background: url(../images/bg5.jpg) no-repeat fixed;
-  background-size: 100% 100%;
-  background-position: center;
-  filter: blur(10px);
-  height: 800px;
-  width: 100%;
-  position: fixed;
-  z-index: -1;
-}
-
-/*////////////////////////////////////////// home section start /////////////////////////////////////////////*/
 
 #home button {
   position: relative;
@@ -107,11 +89,6 @@ html {
 #home button:hover .button-text {
   color: #fff;
 }
-
-
-/*////////////////////////////////////////// home section end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// nav section start /////////////////////////////////////////////*/
-
 nav .box {
   width: 200px;
   height: auto;
@@ -180,8 +157,6 @@ nav button {
   border: none;
   background: transparent;
 }
-/*////////////////////////////////////////// nav section end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// footer section start /////////////////////////////////////////////*/
 
 .footer-row3 {
   background: #ffffff;
@@ -199,15 +174,12 @@ nav button {
 .fa:hover {
   color: rgb(93, 93, 223);
 }
-/*////////////////////////////////////////// footer section end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// services section start /////////////////////////////////////////////*/
-
-#services .card:hover {
+.card:hover {
   transition: all 0.4s;
   transform: scale(1.06);
   box-shadow: 0px 0px 40px gray;
 }
-#services .card a:hover {
+.card a:hover {
   background-color: white;
   color: rgb(100, 100, 231);
 }
@@ -221,14 +193,6 @@ nav button {
 .featurette img {
   height: 500px;
 }
-
-#services img {
-  height: 300px;
-}
-
-/*////////////////////////////////////////// services section end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// appp section start /////////////////////////////////////////////*/
-
 .app-list li {
   margin: 10px 10px 10px 40px;
   position: relative;
@@ -242,7 +206,7 @@ nav button {
 }
 
 .bbutton {
-  padding: 17px 20px;
+  padding: 17px 40px;
   border-radius: 50px;
   border: 0;
   background-color: white;
@@ -251,7 +215,7 @@ nav button {
   text-transform: uppercase;
   font-size: 15px;
   transition: all 0.5s ease;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .bbutton:hover {
@@ -286,34 +250,26 @@ nav button {
 #our_app .or {
   margin-top: 100px;
 }
+
+.body {
+  background: url(../images/bg5.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  filter: blur(10px);
+  height: 800px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+#services img {
+  height: 300px;
+}
 .text-l h3,
 .text-l h5,
 .text-l p {
   margin-left: 30px;
 }
-/*////////////////////////////////////////// app section end /////////////////////////////////////////////*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*////////////////////////////////////////// media query  start /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query  start /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query  start /////////////////////////////////////////////*/
 
 @media (max-width: 768px) {
   #home .intro {
@@ -335,143 +291,3 @@ nav button {
   }
 
 }
-
-/*////////////////////////////////////////// media query end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query end /////////////////////////////////////////////*/
-
-
-
-
-
-
-
-
-/*////////////////////////////////////////// my team section start /////////////////////////////////////////////*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-
-.slide-container{
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-.slide-content{
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-}
-.card{
-  border-radius: 25px;
-  background-color: #FFF;
-  overflow: hidden;
-}
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-.image-content{
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.overlay{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070F4;
-  border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #4070F4;
-}
-.overlay::after{
-  border-radius: 0 25px 0 0;
-  background-color: #FFF;
-}
-.card-image{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #FFF;
-  padding: 3px;
-}
-.card-image .card-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #4070F4;
-}
-.name{
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-}
-.description{
-  font-size: 14px;
-  color: #707070;
-  text-align: center;
-}
-.button{
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  padding: 8px 16px;
-  background-color: #4070F4;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.button:hover{
-  background: #265DF2;
-}
-
-.swiper-navBtn{
-  color: #6E93f7;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 35px;
-}
-.swiper-button-next{
-  right: 0;
-}
-.swiper-button-prev{
-  left: 0;
-}
-.swiper-pagination-bullet{
-  background-color: #6E93f7;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  background-color: #4070F4;
-}
-
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  .swiper-navBtn{
-    display: none;
-  }
-}
-/*////////////////////////////////////////// my team section start /////////////////////////////////////////////*/
