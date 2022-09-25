@@ -30,7 +30,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobile']) &&
 		'allow_self_signed'=>false
 	));
 	if($mail->send()){
-		echo "Mail send";
+		echo "Mail Send";
 	}else{
 		echo "Error occur";
 	}

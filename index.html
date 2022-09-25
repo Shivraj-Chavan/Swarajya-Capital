@@ -381,8 +381,7 @@
         type:'post',
         data:jQuery('#frmContactus').serialize(),
         success:function(result){
-          jQuery('#msg').html(result);
-          jQuery('#submit').html('Submit');
+          jQuery('#submit').val(result);
           jQuery('#submit').attr('disabled',false);
           jQuery('#frmContactus')[0].reset();
         }
