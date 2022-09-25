@@ -324,14 +324,19 @@ nav button {
   #home .intro button {
     margin-top: 30px;
   }
-
+  #home .button-text{
+    text-indent: 10px;
+  }
   #contact_pg iframe {
     margin-top: 50px;
   }
   .bbutton {
     margin: 10px auto;
-    width: 80%;
+    width: 90%;
     display: block;
+    line-height: 10px;
+    padding:10px 0px 10px 10px;
+    text-align: center
   }
 
 }
