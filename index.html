@@ -98,7 +98,7 @@
 
 <!-- Home page start -->
   <section id="home">
-    <div class="container-fluid">
+    <div class="container bg">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex align-items-center">
               <div class="intro col-12 mx-4">
@@ -124,7 +124,7 @@
 
 
 <!-- info start -->
-<div class="container">
+<div class="container" id="services">
   <div class="heading d-block">
     <h5 class="display-4 text-center fw-bold my-5 py-5 border-top under border-bottom">Our Financial Services</h5>
   </div>
@@ -133,7 +133,7 @@
 
     <div class="col-12 col-xl-4 col-md-6  col-sm-12 ">
       <div class="card mx-auto my-3" style="width: 18rem;">
-        <img src="./images/Equity.webp" class="card-img-top" alt="...">
+        <img src="./images/equity.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Equity</h5>
           <p class="card-text">Trading in equities with Profitmart brings you the very best of the Technology, Research, Access and Ease.
@@ -147,7 +147,7 @@
 
     <div class="col-12 col-xl-4 col-md-6  col-sm-12 ">
       <div class="card mx-auto my-3" style="width: 18rem;">
-        <img src="./images/commodity.jpg" class="card-img-top" alt="...">
+        <img src="./images/Coomodity.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">COMMODITY</h5>
           <p class="card-text">Commodities derivative market has emerged as a new avenue for investors to create wealth.
@@ -161,7 +161,7 @@
 
     <div class="col-12 col-xl-4 col-md-6  col-sm-12 ">
       <div class="card mx-auto my-3" style="width: 18rem;">
-        <img src="./images/currancy.jpg" class="card-img-top" alt="...">
+        <img src="./images/cuurrancy.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CURRANCY</h5>
           <p class="card-text">The global increase in trade and foreign investments has led to inter-connection of many national economies.
@@ -175,7 +175,7 @@
 
     <div class="col-12 col-xl-4 col-md-6  col-sm-12 ">
       <div class="card mx-auto my-3" style="width: 18rem;">
-        <img src="./images/sip.jpg" class="card-img-top" alt="...">
+        <img src="./images/ssip.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">SIP</h5>
           <p class="card-text">Stock SIP is a vehicle offered to help investor save regularly. It is just like a recurring deposit with the bank where investor put in a small amount every month.
@@ -222,8 +222,8 @@
 
 
 <!-- app info start -->
-<div class="container my-5 py-5" id="our_app">
-  <div class="row">
+<div class="container bg my-5 py-5" id="our_app">
+  <div class="row or">
     <div class="col-lg-7 block-1">
       <div class="text-l pr25">
         <h3>PESB Wave</h3>
@@ -372,22 +372,7 @@
 
 
     <script>
-      jQuery('#frmContactus').on('submit',function(e){
-      jQuery('#msg').html('');
-      jQuery('#submit').html('Please wait');
-      jQuery('#submit').attr('disabled',true);
-      jQuery.ajax({
-        url:'./frm/submit.php',
-        type:'post',
-        data:jQuery('#frmContactus').serialize(),
-        success:function(result){
-          jQuery('#submit').val(result);
-          jQuery('#submit').attr('disabled',false);
-          jQuery('#frmContactus')[0].reset();
-        }
-      });
-      e.preventDefault();
-      });
+    
       </script>
   </body>
 </html>
