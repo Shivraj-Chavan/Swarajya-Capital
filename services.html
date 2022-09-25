@@ -13,33 +13,44 @@
 </head>
   <body>
    <!-- Navigation start -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-
+   <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Swarajya Capital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Services </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#our_app"> Our APP </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#map"> Map </a>
           </li>
-         
-          <li class="nav-item">
-            <a class="nav-link active" href="services.html" aria-current="page"> Services </a>
-          </li>
-         
         </ul>
         <form class="d-flex" role="search">
-          <button type="button">
-            <span class="box">
-                Open Account
-            </span>
-        </button>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#open_ac_Modal"
+          >
+            <span class="box"> Contact Us </span>
+          </button>
         </form>
       </div>
     </div>
@@ -49,38 +60,106 @@
 
 
   <!--open account Modal -->
-  <div class="modal fade" id="open_ac_Modal" tabindex="-1" aria-labelledby="open_ac_ModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="open_ac_ModalLabel">Fill this form Our Team will contact You...</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form>
-        <div class="modal-body">    
-                <div class="mb-3">
-                  <label for="InputName1" class="form-label">Name</label>
-                  <input type="email" name="uname" class="form-control" id="InputName1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="number1" class="form-label">Phone Number</label>
-                  <input type="number" name="username" class="form-control" id="number1" aria-describedby="emailHelp">
-                </div>
-
+  <div
+  class="modal fade"
+  id="open_ac_Modal"
+  tabindex="-1"
+  aria-labelledby="open_ac_ModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="open_ac_ModalLabel">
+          Fill this form Our Team will contact You...
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form id="frmContactus" method="post">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="InputName1" class="form-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="number1" class="form-label">Phone Number</label>
+            <input
+              type="number"
+              name="mobile"
+              class="form-control"
+              id="mobile"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="number1" class="form-label">city</label>
+            <input
+              type="text"
+              name="city"
+              class="form-control"
+              id="city"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="number1" class="form-label">Comment / msg</label>
+            <input
+              type="text"
+              name="comment"
+              class="form-control"
+              id="comment"
+              aria-describedby="emailHelp"
+            />
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submiy" class="btn btn-primary">Submit</button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button
+            type="submit"
+            class="btn btn-outline-primary"
+            name="submit"
+            id="submit"
+          >
+            Submit
+          </button>
+          <span style="color: red" id="msg"></span>
         </div>
-    </form>
-      </div>
+      </form>
     </div>
   </div>
+</div>
 <!-- open account modal end -->
 
 <!-- services start -->
@@ -93,7 +172,7 @@
     
     <div class="row featurette" id="equity">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">equity</h2>
+          <h2 class="featurette-heading fw-normal lh-1">EQUITY</h2>
           <p class="lead">Trading in equities with us brings you the very best of the Technology, Research, Access and Ease. It empowers you to invest in Equities by providing an anchor to guide you as to when, where and how to invest.
 
             Best-in-class technology: Investing in cutting-edge technology
@@ -129,13 +208,27 @@
         </div>  
         </div>  
 
-    <div class="row featurette" id="depository">
+    <div class="row featurette" id="mutual_fund">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">DEPOSITORY </h2>
-          <p class="lead">Our depository services offer you a secure, convenient, paperless and cost effective way to keep track of your investments in shares and other instruments over a period of time, without the hassle of handling physical documents. Your DP account with us takes care of your depository needs such as dematerialization, conversion of mutual fund units, mutual fund redemption, re-materialization, transfer and pledging of shares, stock lending and borrowing. We offer economical and competitive DEMAT charges with attractive schemes like lifetime free AMC (Annual account maintenance charges).</p>
+          <h2 class="featurette-heading fw-normal lh-1">MUTUAL FUND </h2>
+          <p class="lead">
+            Mutual fund is a financial instrument that pools money from different investors. The pooled money is then invested in securities like stocks of listed companies, government bonds, corporate bonds, and money market instruments.
+
+As an investor, you don’t directly own the company’s stocks that mutual funds purchases. However, you share the profit or loss equally with the other investors of the pool. This is how the word “mutual” is associated with a mutual fund.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./images/depository.png" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./images/Mutual.jpeg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+  
+        </div>
+      </div>
+    <div class="row featurette" id="algo">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"> ALGORITHMIC TRADING</h2>
+          <p class="lead">
+            Algorithmic trading is a method of executing orders using automated pre-programmed trading instructions accounting for variables such as time, price, and volume. This type of trading attempts to leverage the speed and computational resources of computers relative to human traders. In the twenty-first century, algorithmic trading has been gaining traction with both retail and institutional traders.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./images/algo.jpeg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"/>
   
         </div>
       </div>
@@ -157,46 +250,66 @@
   <footer class="row py-5 my-5 border-top">
     <div class="col-12 col-xl-6 mt-5 text-muted">
       <div class="mx-4">
-      <h1>Contact</h1>
-      <h4><i class="fa fa-envelope"></i>Email</h4>
-      <a href="mailto:Somnathchavan0405@gmail.com" target="_blank" class="px-5">Somnathchavan0405@gmail.com</a>
-      <h4><i class="fa fa-phone"></i>Phone</h4>
-      <p class="px-5">+91 7498729254</p>
-      <h4><i class="fa fa-building"></i>Adddress </h4>
-      <p class="px-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptate quaerat deserunt velit quibusdam nulla.
-      </p>
+        <h1>Contact</h1>
+        <h4><i class="fa fa-envelope"></i>Email</h4>
+        <a
+          href="mailto:svarajyacapital7@gmail.com"
+          target="_blank"
+          class="px-5"
+          >svarajyacapital7@gmail.com</a
+        >
+        <h4><i class="fa fa-phone"></i>Phone</h4>
+        <p class="px-5">+91 7498729254</p>
+        <h4><i class="fa fa-building"></i>Adddress</h4>
+        <p class="px-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+          voluptate quaerat deserunt velit quibusdam nulla.
+        </p>
+      </div>
     </div>
-    </div>
-
 
     <div class="col-12 mb-3 mt-5 col-xl-6 col-sm-12">
       <div class="row">
-      <div class="col-12 col-xl-6 col-sm-12 ">
-      <h5 class="mx-4">Our Services</h5>
-      <ul class="nav mx-4 flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Broking</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mutual Funds</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Insurance</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Currancy</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">IPOs</a></li>
-      </ul>
-      <h5 class="mx-4 mt-5">Our Services</h5>
-      <ul class="nav mx-4 flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Broking</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mutual Funds</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Insurance</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Currancy</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">IPOs</a></li>
-      </ul>
+        <div class="col-12 col-xl-6 col-sm-12">
+          <h5 class="mx-4">Our Services</h5>
+          <ul class="nav mx-4 flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Broking</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Mutual Funds</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Insurance</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Currancy</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Investment guidance</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Portfolio Management</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">IPOs</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="col-12 col-sm-12 col-xl-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4431.729907103975!2d73.0189959506567!3d19.021946107141627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3bdb9f281bf%3A0x21876060ed561274!2sSeawoods%20-%20Darave!5e0!3m2!1sen!2sin!4v1663513108381!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    <div class="col-12 col-sm-12 col-xl-6">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4431.729907103975!2d73.0189959506567!3d19.021946107141627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3bdb9f281bf%3A0x21876060ed561274!2sSeawoods%20-%20Darave!5e0!3m2!1sen!2sin!4v1663513108381!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
-    </div>
-    </div>
-
-
   </footer>
 </div>
 <!-- footer 1 end -->
