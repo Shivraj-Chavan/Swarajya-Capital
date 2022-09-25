@@ -215,14 +215,14 @@ nav button {
   text-transform: uppercase;
   font-size: 15px;
   transition: all 0.5s ease;
-line-height: 20px;
+  line-height: 20px;
 }
 
 .bbutton:hover {
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
-transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .bbutton:active {
@@ -244,17 +244,12 @@ transform: scale(1.1);
   margin: 0;
 }
 
-.bg{
+.bg {
   background-color: hwb(187 95% 2%);
 }
-#our_app .or{
-  margin-top:100px
+#our_app .or {
+  margin-top: 100px;
 }
-
-
-
-
-
 
 .body {
   background: url(../images/bg5.jpg) no-repeat fixed;
@@ -267,37 +262,14 @@ transform: scale(1.1);
   z-index: -1;
 }
 
-#services img{
-height:300px;
-
+#services img {
+  height: 300px;
 }
-.text-l h3,.text-l h5,.text-l p{
-  margin-left:30px
+.text-l h3,
+.text-l h5,
+.text-l p {
+  margin-left: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
   #home .intro {
@@ -314,14 +286,10 @@ height:300px;
   }
   .bbutton {
     margin: 10px auto;
-    width:80%;
+    width: 80%;
     display: block;
-    
   }
-  nav{
+  nav {
     background-color: #6a6a8e;
   }
- 
- 
-
 }
