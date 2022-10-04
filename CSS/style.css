@@ -18,7 +18,9 @@ html {
   position: fixed;
   z-index: -1;
 }
-
+.right-0{
+  right:10px
+}
 /*////////////////////////////////////////// home section start /////////////////////////////////////////////*/
 
 #home button {
