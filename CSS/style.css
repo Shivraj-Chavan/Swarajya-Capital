@@ -1,10 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-*{
-
+* {
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* main background image */
@@ -18,8 +17,8 @@ html {
   position: fixed;
   z-index: -1;
 }
-.right-0{
-  right:10px
+.right-0 {
+  right: 10px;
 }
 /*////////////////////////////////////////// home section start /////////////////////////////////////////////*/
 
@@ -111,7 +110,6 @@ html {
   color: #fff;
 }
 
-
 /*////////////////////////////////////////// home section end /////////////////////////////////////////////*/
 /*////////////////////////////////////////// nav section start /////////////////////////////////////////////*/
 
@@ -183,26 +181,26 @@ nav button {
   border: none;
   background: transparent;
 }
-nav{
+nav {
   box-shadow: 0 0px 10px gray;
 }
-nav li{
+nav li {
   position: relative;
   overflow: hidden;
 }
 
-nav li::after{
+nav li::after {
   content: " ";
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: -100%;
-  height:2px;
-  width:100%;
-  background-color:black;
-transition: all 1s;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 1s;
 }
-li:hover:after{
-  left:0px
+li:hover:after {
+  left: 0px;
 }
 
 /*////////////////////////////////////////// nav section end /////////////////////////////////////////////*/
@@ -226,9 +224,7 @@ li:hover:after{
 }
 /*////////////////////////////////////////// footer section end /////////////////////////////////////////////*/
 /*////////////////////////////////////////// services section start /////////////////////////////////////////////*/
-.under{
-  text-shadow: 0 0 10px white;
-}
+
 #services .card:hover {
   transition: all 0.4s;
   transform: scale(1.06);
@@ -238,9 +234,11 @@ li:hover:after{
 .featurette {
   margin-top: 50px;
   padding-top: 40px;
+  
 }
 .featurette div {
   padding: 30px;
+  
 }
 .featurette img {
   height: 500px;
@@ -316,27 +314,6 @@ li:hover:after{
   margin-left: 30px;
 }
 /*////////////////////////////////////////// app section end /////////////////////////////////////////////*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*////////////////////////////////////////// media query  start /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query  start /////////////////////////////////////////////*/
 /*////////////////////////////////////////// media query  start /////////////////////////////////////////////*/
 
 @media (max-width: 768px) {
@@ -348,7 +325,7 @@ li:hover:after{
   #home .intro button {
     margin-top: 30px;
   }
-  #home .button-text{
+  #home .button-text {
     text-indent: 10px;
   }
   #contact_pg iframe {
@@ -359,148 +336,95 @@ li:hover:after{
     width: 90%;
     display: block;
     line-height: 10px;
-    padding:10px 0px 10px 10px;
-    text-align: center
+    padding: 10px 0px 10px 10px;
+    text-align: center;
   }
-
 }
 
 /*////////////////////////////////////////// media query end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query end /////////////////////////////////////////////*/
-/*////////////////////////////////////////// media query end /////////////////////////////////////////////*/
 
 
-
-
-
-
-
-
-/*////////////////////////////////////////// my team section start /////////////////////////////////////////////*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-
-.slide-container{
-  max-width: 1120px;
+.cardt{
+  width:300px;
+  height: 350px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cardt:hover{
+  transform: scale(1.1);
+}
+.card-imaget {
+  background-color: rgb(236, 236, 236);
   width: 100%;
-  padding: 40px 0;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
 }
-.slide-content{
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
+
+.card-imaget:hover {
+  transform: scale(0.98);
 }
-.card{
-  border-radius: 25px;
-  background-color: #FFF;
-  overflow: hidden;
+
+.categoryt {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+  text-align: center;
+
 }
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-.image-content{
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.overlay{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070F4;
-  border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #4070F4;
-}
-.overlay::after{
-  border-radius: 0 25px 0 0;
-  background-color: #FFF;
-}
-.card-image{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #FFF;
-  padding: 3px;
-}
-.card-image .card-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #4070F4;
-}
-.name{
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-}
-.description{
-  font-size: 14px;
-  color: #707070;
+
+
+.headingt {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
   text-align: center;
 }
-.button{
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  padding: 8px 16px;
-  background-color: #4070F4;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+/* ///////////////////////////cource///////////////////// */
+#cource li{
+  list-style: none;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+
 }
-.button:hover{
-  background: #265DF2;
+#cource h1{
+  padding:20px 50px;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(29deg, #00FF5BFF 0%, #239DF5FF 100%);
+text-align: center;}
+#cource h2{
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#cource .card{
+  width:80%;
+  display: block;
+  margin: auto;
+  height:100%;
+  position: relative;
+}
+#cource .card h4{
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+.card ul{
+  padding-bottom:50px
+}
+#cource .fa{
+  font-size: 20px;
+  color:green;
+  padding:0;
+  margin:0 20px 0 0
 }
 
-.swiper-navBtn{
-  color: #6E93f7;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 35px;
-}
-.swiper-button-next{
-  right: 0;
-}
-.swiper-button-prev{
-  left: 0;
-}
-.swiper-pagination-bullet{
-  background-color: #6E93f7;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  background-color: #4070F4;
+
+.fw-bold,.lh-1{
+  color:#239DF5FF;
+  
 }
 
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  .swiper-navBtn{
-    display: none;
-  }
-}
-/*////////////////////////////////////////// my team section start /////////////////////////////////////////////*/
