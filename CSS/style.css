@@ -241,7 +241,13 @@ li:hover:after {
   
 }
 .featurette img {
-  height: 500px;
+  height: 450px;
+  box-sizing: border-box;
+
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(29deg, #00FF5BFF 0%, #239DF5FF 100%);
+    padding:30px
 }
 
 #services img {
@@ -345,25 +351,28 @@ li:hover:after {
 
 
 .cardt{
-  width:300px;
-  height: 350px;
+  width:400px;
   background: white;
   padding: .4em;
   border-radius: 6px;
   cursor: pointer;
+  height:100%
 }
-.cardt:hover{
-  transform: scale(1.1);
+.card_data{
+  padding:10px;
+  text-align: justify;
+  text-indent: 100px;
 }
 .card-imaget {
   background-color: rgb(236, 236, 236);
-  width: 100%;
-  height: 60%;
-  border-radius: 6px 6px 0 0;
-}
-
-.card-imaget:hover {
-  transform: scale(0.98);
+  width: 90%;
+  height:300px;
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 50%;
+  outline:15px solid gray;
+  outline-offset: -15px;
 }
 
 .categoryt {
@@ -395,7 +404,7 @@ li:hover:after {
   background-position: 0px 0px;
   background-image: linear-gradient(29deg, #00FF5BFF 0%, #239DF5FF 100%);
 text-align: center;}
-#cource h2{
+.heading-2{
   font-size: 50px;
   text-align: center;
   padding-bottom: 30px;
@@ -424,7 +433,13 @@ text-align: center;}
 
 
 .fw-bold,.lh-1{
-  color:#239DF5FF;
+  color:rgb(0, 0, 0);
   
 }
 
+.card, .card h4{
+  border-radius: 20px;
+}
+.lead{
+  color:#555
+}
